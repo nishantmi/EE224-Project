@@ -7,4 +7,6 @@ Currently Part A ongoing.
 <br/>
 Status:
 <br/>
-Kogge Stone Adder implemented, testing in progress.
+Kogge Stone Adder implemented.
+<br/>
+Part A, first iteration completed. Testing remains.
