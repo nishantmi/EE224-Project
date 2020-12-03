@@ -1,3 +1,5 @@
+library ieee;
+use ieee.std_logic_1164.all;
 entity Testbench_KS_4bits is
 end Testbench_KS_4bits;
 

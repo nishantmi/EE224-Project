@@ -1,6 +1,8 @@
+library ieee;
+use ieee.std_logic_1164.all;
 entity not_2 is
-    port (in_not : in bit;
-          O_not: out bit
+    port (in_not : in std_logic;
+          O_not: out std_logic
           );
 end entity not_2;
 

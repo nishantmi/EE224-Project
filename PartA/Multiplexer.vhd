@@ -1,25 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
 entity Multiplexer is
-	port (I0,I1 : in bit_vector(0 to 15);
-			Cntrl : in bit;
-			F : out bit_vector(0 to 15));
+	port (I0,I1 : in std_logic_vector(15 downto 0);
+			Cntrl : in std_logic;
+			F : out std_logic_vector(15 downto 0));
 end entity Multiplexer;
 
 architecture Struct of Multiplexer is
-	signal notS,T1,T2: bit_vector(0 to 15);
+	signal notS,T1,T2: std_logic_vector(15 downto 0);
 	
 	component or_2 is
-		port (in1_or,in2_or : in bit;
-				O_or : out bit);
+		port (in1_or,in2_or : in std_logic;
+				O_or : out std_logic);
 	end component;
 	
 	component not_2 is
-		port (in_not : in bit;
-            O_not: out bit);
+		port (in_not : in std_logic;
+            O_not: out std_logic);
 	end component;
 	
 	component and_2 is
-		port (in1_and,in2_and : in bit; 
-				O_and : out bit);
+		port (in1_and,in2_and : in std_logic; 
+				O_and : out std_logic);
 	end component;
 	
 	

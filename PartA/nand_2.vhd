@@ -1,7 +1,9 @@
+library ieee;
+use ieee.std_logic_1164.all;
 entity nand_2 is
-    port (in1_nand : in bit;
-          in2_nand : in bit;
-          O_nand : out bit
+    port (in1_nand : in std_logic;
+          in2_nand : in std_logic;
+          O_nand : out std_logic
           );
 end entity nand_2;
 

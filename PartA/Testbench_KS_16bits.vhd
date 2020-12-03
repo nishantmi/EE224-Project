@@ -1,16 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
 entity Testbench_KS_16bits is
 end Testbench_KS_16bits;
 
 architecture tb of Testbench_KS_16bits is
-	signal a,b : bit_vector(0 to 15); -- inputs
-	signal s : bit_vector(0 to 15); -- outputs
-	signal c_out,c_in : bit;
+	signal a,b : std_logic_vector(15 downto 0); -- inputs
+	signal s : std_logic_vector(15 downto 0); -- outputs
+	signal c_out,c_in : std_logic;
 	
 	component KS_16bit is
-		port (a,b : in bit_vector(0 to 15);
-				c_in : in bit;
-				s : out bit_vector(0 to 15);
-				c_out : out bit);
+		port (a,b : in std_logic_vector(15 downto 0);
+				c_in : in std_logic;
+				s : out std_logic_vector(15 downto 0);
+				c_out : out std_logic);
 	end component;
 
 	begin
